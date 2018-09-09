@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Author creation form</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/library.css" th:href="@{css/library.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/createAuthor.js"></script>
+</head>
+<body>
+
+<form id="create-author-form" class="create-author-form" action="allAuthors.html" th:action="@{/createAuthor}" th:method="post">
+</form>
+<a href="index.html" th:href="@{/}">Back to main</a>
+<br/>
+<a href="allGenres.html" th:href="@{/authors}">Back to all authors</a>
+</body>
+</html>
