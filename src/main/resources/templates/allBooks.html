@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of all books</title>
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/library.css" th:href="@{css/library.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/books.js"></script>
+</head>
+<body>
+<h1>Books:</h1>
+
+<div class="divTable blueTable">
+    <div class="divTableHeading">
+        <div class="divTableRow">
+            <div class="divTableHead">№</div>
+            <div class="divTableHead">Name</div>
+            <div class="divTableHead">PublishDate</div>
+            <div class="divTableHead">Authors</div>
+            <div class="divTableHead">Genre</div>
+            <div class="divTableHead">Edit</div>
+            <div class="divTableHead">Delete</div>
+        </div>
+    </div>
+    <div class="divTableBody" id="books-table">
+    </div>
+</div>
+
+<br/>
+
+<a href="index.html" th:href="@{/}">Back to main</a>
+<br/>
+<a href="createBook.html" th:href="@{/createBook}">Create book</a>
+</body>
+</html>
